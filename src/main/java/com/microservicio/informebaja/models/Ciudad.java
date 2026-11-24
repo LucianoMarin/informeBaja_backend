@@ -26,18 +26,17 @@ public class Ciudad {
     public Ciudad() {
     }
 
-
-    public static Ciudad sinLocalidad(Long id, String ciudad) {
-
-        return new Ciudad(id, ciudad,null);
-
-    }
-
     public Ciudad(Long id, String nombre, String localidad) {
 
         this.id = id;
         this.nombre = nombre;
-        this.localidad=localidad;
+        this.localidad = localidad;
+
+    }
+
+    public static Ciudad sinLocalidad(Long id, String ciudad) {
+
+        return new Ciudad(id, ciudad, null);
 
     }
 
